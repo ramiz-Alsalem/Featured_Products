@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "work sans";
+    background-color: #f1f1f1;
+    text-transform: capitalize;
+}
+.feature-products-box {
+    background-color: #f1f1f1;
+    padding: 20px 12px;
+    position: relative;
+}
+.feature-products-box h2 {
+    position: absolute;
+    background-color: #336d7d;
+    padding: 10px 20px;
+    color: white;
+    font-weight: normal;
+    left: 0;
+}
+.feature-products-box .container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+    padding: 60px 20px 20px 30px;
+    align-items: flex-start;
+}
+.feature-products-box .container .box {
+    border: 3px solid #e4e4e4;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    position: relative;
+}
+.feature-products-box .container .box:first-of-type {
+    margin-left: 5px;
+} 
+.feature-products-box .container .box img {
+    max-width: calc(100% - 2px);
+    width: calc(100% - 2px);
+}
+.feature-products-box .container .box .text p {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #777;
+}
+.feature-products-box .container .box .text span {
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    color: #336d7d;
+    font-weight: bold;
+}
+.feature-products-box .container .box .text span::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.feature-products-box .container .box .text span::after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+.feature-products-box .container .box:nth-of-type(2) .text span::after,
+.feature-products-box .container .box:nth-of-type(2) .text span::before {
+    width: 38px
+}
+.feature-products-box .container .box:nth-of-type(2) .text span {
+    color: orangered;
+}
+.feature-products-box .container .box .text span del {
+    font-size: 13px;
+    color: #77777796;
+    font-weight: 400;
+}
+.box:nth-of-type(2) div::before {
+    content: 'Sale!';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -15px;
+    left: -15px;
+    background-color: orangered;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    font-size: 12px;
+}
